@@ -8,6 +8,19 @@ The API that this server offers is described [here](https://credentials.github.i
 
 See below to run or build the server yourself. Alternatively, you can use our demo API server, which is setup to be very permissive (but only in the demo domain). It is hosted at `https://demo.irmacard.org/tomcat/irma_api_server/`, you can find its signing key [here](https://demo.irmacard.org/v2/data/pk.pem).
 
+# Required packages
+
+The building and running of this application requires Node.js and several of its packages.
+Installation instruction for specific operating systems are available on [the official website](https://nodejs.org/en/download/package-manager/)
+
+After installing Node.js you can install the required Node.js packages using the following commands:
+
+    npm install grunt-cli bower compass
+
+To run tests using gradle you also have to install the following:
+
+    npm install qrcode-terminal request jsonwebtoken fs
+
 # Running and building the server
 
 The gradle build file should take care the dependencies. To run the server in development mode simply call:
